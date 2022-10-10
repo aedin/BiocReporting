@@ -1,0 +1,26 @@
+Package: BiocReporting
+Title: Resources for reporting on Bioconductor project
+Version: 0.0.0
+Authors@R: 
+    c(
+       person(
+        "Vincent", "Carey", role = c("aut", "cre"),
+        email = "stvjc@channing.harvard.edu"), 
+       person("Lori", "Shepherd", role="aut"), 
+       person("Martin", "Morgan", role="aut")
+    )
+Description: Reporting for Bioconductor
+License: Artistic-2.0
+Encoding: UTF-8
+Depends: R (>= 3.6), dplyr
+Imports: tibble,
+	utils,
+	dplyr,
+	ggplot2,
+	httr,
+	lubridate
+Suggests: knitr, testthat
+LazyData: true
+VignetteBuilder: knitr
+biocViews: Infrastructure
+RoxygenNote: 7.2.1

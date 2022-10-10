@@ -1,0 +1,50 @@
+---
+title: "BiocReporting tools"
+author: "Vincent J. Carey, stvjc at channing.harvard.edu"
+date: "`r format(Sys.time(), '%B %d, %Y')`"
+vignette: >
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteIndexEntry{BiocReporting tools}
+  %\VignetteEncoding{UTF-8}
+output:
+  BiocStyle::html_document:
+    highlight: pygments
+    number_sections: yes
+    theme: united
+    toc: yes
+---
+
+```{r setup,echo=FALSE,results="hide"}
+suppressMessages({
+suppressPackageStartupMessages({
+library(BiocReporting)
+options(scipen=10000)
+library(plotly)
+})
+})
+```
+
+# Introduction
+
+This package collects tools for reporting open data about
+Bioconductor assets and distribution activities.
+
+# Support site usage
+
+```{r do1}
+library(BiocReporting)
+get_support_site_stats()
+```
+
+# Download statistics
+
+Relative to previous reports, this is more fine-grained.
+
+```{r lkdl}
+pls = summarize_software_downloads()
+pls$ipplot
+```
+
+```{r lkdl2}
+ggplotly(pls$dlplot)
+```
