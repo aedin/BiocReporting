@@ -309,140 +309,21 @@ citations since 2003.
 
 \subsection{Leadership structure \& community engagement}
 
-The Technical Advisory Board (membership enumerated below) meets
+The \url{https://bioconductor.org/about/technical-advisory-board/}{Technical Advisory Board} meets
 monthly to discuss technical issues important to establishing and
-maintaining project momentum. Over the past two years the structure
+maintaining project momentum. Over the past three years the structure
 has been formalized with a governance document and procedures to
 ensure influx of new participants through a public nomination process
-followed by election to a three year term. The July, 2020 meeting saw
-the departure of long-term board members Sean Davis and Michael
-Lawrence, and Matt Ritchie's transition to co-leadership of the
-newly-formed Community Advisory Board. New members include
-Drs.\ Michael Love (UNC Chapel Hill), Hector Corrada Bravo
-(Genentech), and Shila Ghazanfar (Cancer Research UK,
-Cambridge). Martin Morgan departed as chair of the executive, with
-Vincent Carey taking that role (previously, vice-chair), Levi Waldron
-becoming vice-chair (previously secretary), and Charlotte Soneson
-becoming secretary.
+followed by election to a three year term. 
+Meeting minutes are publised at the site noted above.
 
-The Community Advisory Board was established this year to more
+The \url{https://bioconductor.org/about/community-advisory-board/}{Community Advisory Board} was established in 2020 to more
 directly address the training and outreach mission of
 \Bioconductor. Motivation is several-fold. It is clear the project as
 a whole would benefit from attention focused on community
 engagement. The combined purview of the technical and community boards
 is too large for a single board. The second board expands leadership
 opportunities within the project.
-
-The Community and Technical boards, and the overall leadership
-structure of the project remains a work-in-progress. There is a need
-for established lines of communication and coordination between
-boards, as well as a clear organizational plan describing the
-relationship between them. Technical activities of the board can be
-supported by grant funding, particularly though not exclusively to
-support the core team, whereas activities of the community board may
-both generate revenue (e.g., from conferences) and expenditures in
-ways that are less consistent with current funding sources. The
-Bioconductor Foundation of NA may represent one mechanism for managing
-these financial resources, but this implies greater integration of the
-Foundation into the overall organization structure.
-
-\subsection{Containers and clouds}
-
-Involvement with the AnVIL project has helped to clarify container and
-cloud based strategies for \Bioconductor, resulting in several
-interesting developments.
-
-We have revised our docker strategy to provide images with necessary
-system dependencies, rather than pre-installed packages. This provides
-a flexible image that can be easily tailored to the diverse needs of
-our community. The images are built on community-standard 'rocker'
-base images. One consequence of a docker image is that fixed
-underlying system requirements allow Linux-based 'binary' package
-installation. Binary installations are much faster than source
-installations, allowing containers to be used effectively for tasks
-with relatively short life cycles, e.g., during teaching, running
-workflows, etc. We have explored binary \Bioconductor{} package
-repositories within AnVIL, and have to some extent had binary images
-thrust upon us by the adoption of the RStudio CRAN package manager by
-the underlying rocker container; there have been important lessons
-learned about providing robust and stable containers, including the
-need for much more extensive integration tests of our own containers.
-
-Our involvement with the AnVIL project has provided opportunities to
-use our container knowledge to explore cloud-based computation. Again
-there are several insights from this, although the situation seems one
-more of promise that delivery at the moment. Access to large data
-resources, including data requiring authenticated access and to
-scalable computing capabilities seems very promising. The use of
-containers as a mechanism for delivering \R{} / \Bioconductor{},
-including \emph{RStudio}, moves the burden of 'system administration' from
-the user to the \Bioconductor{} core team. Cost-management and the
-need to fund use through Google and credit card introduces many
-barriers to use by the \Bioconductor{} community. Workshop
-infrastructure developed by Sean Davis for our just-concluded annual
-conference illustrates opportunities for scalability through the use
-of clouds and containers, with thousands of workshops launched with
-minimal end-user complaint and modest cost using Google Kubernettes
-Engine.
-
-\subsection{Software}
-
-\begin{description}
-  \item[\Biocpkg{BiocIO}] extracts from the \Biocpkg{rtracklayer}
-    package a common language and flexible infrastructure for
-    importing and exporting file types, simplifying file access and
-    focusing development efforts on more advanced file processing
-    models.
-\item[\Biocpkg{GenomicRanges}] and friends represent a mature infrastructure for
-  working with range-based and sequence data.
-\item[\Biocpkg{DelayedArray}] and the \Biocpkg{HDF5Array} back-end
-  provide a framework for managing large out-of-memory rectangular
-  data representations.
-\item[\Biocpkg{BiocFileCache}] manages a cache of local or remote files.
-\item[\Biocpkg{AnnotationHub}] and \Biocpkg{ExperimentHub} and
-  supporting infrastructure play increasingly important roles in
-  distribution of annotation and experiment results.
-\item[Incremental enhancements] to \Biocpkg{BiocParallel},
-  \Biocpkg{GenomicFiles}, \Biocpkg{BiocCheck},
-  \Biocpkg{MultiAssayExperiment}, \Biocpkg{SummarizedExperiment} and
-  other core packages.
-\end{description}
-
-\subsection{Infrastructure}
-
-\begin{description}
-\item[Version control] We continue to use package-specific git
-  repositories hosted at git.bioconductor.org for package
-  maintenance.
-
-  Some aspects of the use of git.bioconductor.org, especially access
-  management, represent pain points (as evidenced by frequent reports
-  of difficulties on the bioc-devel mailing list) where further effort
-  is needed to smooth the experience.
-\item[New package contributions] use
-  \href{https://github.com/Bioconductor/Contributions}{Github} and a
-  public review process. The process has been updated so that new
-  maintainers become familiar with use of the \Bioconductor{} git
-  repository during the package ingestion process. Effort expended on
-  reviewing packages is considerable; generally, the review process
-  has become both more protracted and less comprehensive in response
-  to this.
-\item[Single package builder] (SPB) is used to build packages in the
-  review process on commit. Builds occur across Linux, macOS, and
-  Windows environments that closely resemble the \Bioconductor{} build
-  system, providing developers with immediate feedback for iterative
-  improvement of their packages. The SPB has been updated to use
-  git.bioconductor.org as a repository source. This was done so that
-  new package contributes use the \Bioconductor{} git repository
-  during the review process (see previous point). An easy technical
-  extension is to allow build-on-commit for existing as well as new
-  packages; this would provide a build experience, complementary to
-  the nightly builds, that is more comparable to the continuous
-  integration systems many of our developers are familiar with. A
-  necessary step before implementing this is to understand whether a
-  build-on-commit system would be too taxing to the physical resources
-  of the build system.
-\end{description}
 
 \subsection{User Support}
 
@@ -465,15 +346,6 @@ Engine.
   catalyst in the HCA grantsmanship process, and in several
   significant collaborative software initiatives lead by community
   members.
-
-  Use of slack within the community poses several challenges. Support
-  channels have become fragmented, with users and developers posting
-  requests to the support site, developer mailing list, specific
-  issues on github repositories, and slack. Even with a substantial
-  discount, the slack channel is increasingly expensive. The large
-  number of channels, and the opportunity for private messaging, poses
-  challenges for ensuring community code of conduct and appropriate
-  use.
 \item[\href{https://bioconductor.org/help/course-materials}{Course
     Materials}] organize and make accessible recent course and
   training material.
@@ -553,8 +425,8 @@ The \textbf{Core Development Team} are primarily employees of Roswell
 Park Cancer Institute, developing software and other infrastructure
 and ensuring day-to-day operation of the project. Core team members in
 the period covered by this report include Martin Morgan, Herv\'{e}
-Pag\`{e}s, Marcel Ramos, Lori Shepherd, Nitesh Turaga, Daniel van
-Twisk, and Kayla Interdonato. The core team is stable but in chronic
+Pag\`{e}s, Marcel Ramos, Lori Shepherd, Nitesh Turaga,
+and Kayla Interdonato. The core team is stable but in chronic
 need of additional members.
 
 The \textbf{Technical Advisory Board} provides guidance through
