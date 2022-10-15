@@ -3,9 +3,9 @@
 \usepackage{Bioconductor}
 \usepackage{graphicx}
 \usepackage{fullpage}
-\title{\Bioconductor{} Annual Report (preliminary)}
-\author{Lori Kern\\ Roswell Park Comprehensive Cancer Center}
-\date{Nov 30, 2021}
+\title{\Bioconductor{} Annual Report for 2021}
+\author{Lori Kern\\ Roswell Park Comprehensive Cancer Center \\ Vincent Carey \\ Harvard Medical School}
+\date{Oct 13, 2022; production delayed}
 
 \begin{document}
 
@@ -31,14 +31,100 @@ scientists.
 
 \subsection{Funding}
 
-Lori does not have information to summarize.
+A summary of projects funded for domestic investigators and 
+collaborators is given in Table \ref{gra}.
+
+% latex table generated in R 4.2.1 by xtable 1.8-4 package
+% Thu Oct 13 19:44:41 2022
+\begin{table}[ht]
+\centering
+\begin{tabular}{rlllll}
+  \hline
+ Institute-Topic-Type & Project Number & PIs & Start & End \\ 
+  \hline
+ NHGRI Bioconductor U24 & 2U24HG004059-17 & Irizarry;Carey & 3/2021 & 3/2026 \\ 
+ NHGRI AnVIL U24 & 5U24HG010263-05 & Schatz/MPIs & 9/2018 & 7/2023 \\ 
+ NCI ITCR U24 & 5U24CA180996-08 & Waldron;Morgan & 9/2019 & 9/2024  \\ 
+ NCI Metagenomics U01 & 1U01CA230551-01A1 & Waldron & 7/2020 & 7/2024 \\ 
+ NIH Common Fund R03 & 1R03OD032629-01 & Carey;Culhane & 9/2021 & 9/2023 \\ 
+ NSF ACCESS cloud & BIR190004 & Carey & 3/2022 & 3/2023 \\ 
+   \hline
+\end{tabular}
+\caption{Summary of grants to domestic investigators.}
+\label{gra}
+\end{table}
+
+Figure \ref{fig:org-chart} provides an approximate view of
+relationships among investigators and staff and their tasks.
+Institutions are Dana-Farber Cancer Institute (DFCI),
+Brigham and Women's Hospital (BWH), RPCI (Roswell Park
+Cancer Institute), City University of New York (CUNY), and
+Fred Hutchinson Cancer Research Center (FHCRC).  Abbreviations
+in use include CAB (Community Advisory Board), TAB (Technical
+Advisory Board), PM (Project Management), BBS (Bioconductor 
+Build System), AnVIL (Analysis and Visualization Lab Space, and
+NHGRI Cloud Computing initiative.)  "Hubs" refers to AnnotationHub
+and ExperimentHub resources provided by the project.  "BSgenome/Forges"
+refers to a collection of systems for representing reference genomes
+using Biostrings.
+
+%name	institute	task	super
+%R. Irizarry	DFCI	PI/methods	Bioc
+%V. Carey	BWH	PI/tech/TAB	Bioc
+%N. George	DFCI	Hardware	R. Irizarry
+%N. Breslin	DFCI	Grants	R. Irizarry
+%sub1	BWH	Carey/Mahmoud	N. Breslin
+%sub2	RPCI	Morgan/Kern/Interdonato	N. Breslin
+%sub3	CUNY	Waldron/Wokaty/Ramos	N. Breslin
+%sub4	FHCRC	BSgenome/Forges	N. Breslin
+%K. Street	DFCI	methods	R. Irizarry
+%%(TBN)	DFCI	CoreDev	V. Carey
+%L. Kern	RPCI	PM/Hubs/CAB	V. Carey
+%H. Pages	FHCRC	BBS/stack	V. Carey
+%J. Wokaty	CUNY	BBS/outreach	H. Pages
+%A. Mahmoud	BWH	Cloud/AnVIL	V. Carey
+%A. Culhane	Limerick	methods/CZI/DI	Bioc
+%M. Doyle	Limerick	Comm. Mgr.	A. Culhane
+%K. Interdonato	RPCI	Hubs/Anno	L. Kern
+
+\begin{figure}[h]
+  \begin{center}
+    \includegraphics[width=1.1\textwidth,height=!]{newgr2}
+    \caption{Organizational chart.}
+    \label{fig:org-chart}
+  \end{center}
+\end{figure}
+
+
 
 \subsection{Package and Annotation Resources}
 
-\R{} software packages represent the primary product of the
+\R{} software packages represent a primary product of the
 \Bioconductor{} project. Packages are produced by the \Bioconductor{}
 team and from international
-contributors. Table~\ref{tbl:analysis_pkgs} summarizes growth in the
+contributors.  There are several types of package to be distinguished.
+
+\begin{itemize}
+\item \textbf{Central infrastructure}.  This includes packages that
+provide formal programming support with no direct substantive
+relationship to genomics.  These include BiocManager,
+BiocGenerics,
+S4Vectors,
+BiocVersion,
+IRanges,
+Biobase,
+zlibbioc,
+XVector,
+BiocParallel,
+DelayedArray,
+MatrixGenerics. 
+\item \textbf{Genome representation support}.  This includes
+Biostrings, BSgenome, GenomeInfoDb, GenomicRanges.
+\item \textbf{Experiment representation support}.  This includes
+SummarizedExperiment, SingleCellExperiment, SpatialExperiment.
+\end{itemize}
+
+Table~\ref{tbl:analysis_pkgs} summarizes growth in the
 number of packages hosted by \Bioconductor{}, with
 \href{https://bioconductor.org/packages/3.14}{2083 software packages}
 available in release 3.14.  The project produces 901 `annotation'
@@ -63,7 +149,7 @@ The number of distinct IP addresses downloading software continues to
 grow in an approximately exponential fashion
 (Figure~\ref{fig:download-stats}).
 
-\begin{table}
+\begin{table}[b]
   \begin{center}
     \caption{Number of contributed packages included in each
       \Bioconductor{} release.  Releases occur twice per year.}
@@ -101,10 +187,7 @@ grow in an approximately exponential fashion
 Our annual conferences include:
 
 \begin{itemize}
-\item \href{https://bioc2020.bioconductor.org}{BioC2020}
-  pivoted to a 5-day virtual conference, with reduced registration
-  fee and participation reaching our maximum capacity of 500
-  attendees. \href{https://bioc2021.bioconductor.org}{BioC2021} North American
+\item \href{https://bioc2021.bioconductor.org}{BioC2021} North American
   conference was held as a 3-day virtual conference from August 4-6; no in
   person components due to continued covid 2019 restrictions. Participation
   reached 809 attendees.    
@@ -112,13 +195,20 @@ Our annual conferences include:
   as a virtual conference from November 1-4, 2021. Talks were multilingual
   translating to Japanese, Mandarin, and English. There were estimated 430
   attendees.
+\item In conjunction with the \href{https://twitter.com/RBioinformatica}{Mexican Bioinformatics Network} and
+the \href{https://twitter.com/nnb_unam}{Nodo Nacional de Bioinformática CCG UNAM},
+the Comunidad de Desarrolladores de Software en Bioinformática
+held two week-long
+\href{https://comunidadbioinfo.github.io/post/cdsb-2021-workshops/#.YOgqyhNuelY}{online workshops}
+addressing development of
+\href{https://comunidadbioinfo.github.io/cdsb2021_workflows/}{workflows with RStudio and shiny} and
+\href{https://comunidadbioinfo.github.io/cdsb2021_scRNAseq/}{analysis of single-cell RNA-seq experiments},
+August 9-13, 2021.
+
 \item \href{https://eurobioc2022.bioconductor.org/}{European
-  Bioconductor Meeting}, was postponed to March 16-18, 2022 and currently is
-  planned to be in person in Heidelberg, Germany.
-\item \href{https://comunidadbioinfo.github.io/post/cdsb2020-building-workflows-with-rstudio-and-scrnaseq-with-bioconductor/#.YaY3DrtOnmF}{CDSB 2020 (Mexican Bioinformatics Encounter)} took place August 3-7, 2020 as a
-  virtual workshop.
-\item Bioconductor workshops were also held as virtual workshops in conjunction
-  with \href{https://h3africa.org/}{H3Africa}
+  Bioconductor Meeting}, was postponed to March 16-18, 2022.
+\item Bioconductor workshops were also held as \href{https://www.h3abionet.org/categories/event/workshop/introduction-to-hands-on-bioconductor-workshop}{virtual workshops} in conjunction
+  with \href{https://h3africa.org/}{H3Africa}.
 \end{itemize}
 
 
@@ -185,7 +275,6 @@ git.bioconductor.org.
 Web site summary get from google analytics?
 
 
-\textbf{Lori Did Not Update Anything below this section}
 
 
 
@@ -204,9 +293,9 @@ citations since 2003.
   \begin{center}
     \begin{tabular}{rc|rc|rc|rc|rc}
       Year &  N & Year &  N & Year &    N & Year  & N    & Year  & N\\\hline\noalign{\smallskip}
-      2003 &  7 & 2007 & 44 & 2011 &   68 & 2015  & 3138 & 2019  & 5939 \\
-      2004 & 13 & 2008 & 52 & 2012 & 1386 & 2016  & 3415 & 2020* & 3224*\\
-      2005 & 19 & 2009 & 62 & 2013 & 2048 & 2017  & 3988 & \\
+      2003 &  7 & 2007 & 44 & 2011 &   68 & 2015  & 3138 & 2019  & 6010 \\
+      2004 & 13 & 2008 & 52 & 2012 & 1386 & 2016  & 3415 & 2020 & 7655 \\
+      2005 & 19 & 2009 & 62 & 2013 & 2048 & 2017  & 3988 & 2021 & 9141 \\
       2006 & 30 & 2010 & 52 & 2014 & 2401 & 2018  & 4610 & \\
     \end{tabular}
   \end{center}
