@@ -1,0 +1,18 @@
+name	institute	task	super
+R. Irizarry	DFCI	PI/methods	Bioc
+V. Carey	BWH	PI/tech/TAB	Bioc
+N. George	DFCI	Hardware	R. Irizarry
+N. Breslin	DFCI	Grants	R. Irizarry
+sub1	BWH	Carey/Mahmoud	N. Breslin
+sub2	RPCI	Morgan/Kern/Interdonato	N. Breslin
+sub3	CUNY	Waldron/Wokaty/Ramos	N. Breslin
+sub4	FHCRC	BSgenome/Forges	N. Breslin
+K. Street	DFCI	methods	R. Irizarry
+(TBN)	DFCI	CoreDev	V. Carey
+L. Kern	RPCI	PM/Hubs/CAB	V. Carey
+H. Pages	FHCRC	BBS/stack	V. Carey
+J. Wokaty	CUNY	BBS/outreach	H. Pages
+A. Mahmoud	BWH	Cloud/AnVIL	V. Carey
+A. Culhane	Limerick	methods/CZI/DI	Bioc
+M. Doyle	Limerick	Comm. Mgr.	A. Culhane
+K. Interdonato	RPCI	Hubs/Anno	L. Kern
