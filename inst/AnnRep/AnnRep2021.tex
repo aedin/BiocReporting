@@ -122,13 +122,16 @@ DelayedArray,
 MatrixGenerics, graph, rhdf5.
 \item \textbf{Genome representation support}.  This includes
 Biostrings, BSgenome, GenomeInfoDb, GenomicRanges.
+\item \textbf{Infrastructure for high-throughput sequencing data.}
+Includes Rsamtools, Rhtslib, tximport, GenomicAlignments, Rsubread, Rbowtie.
 \item \textbf{Experiment representation support}.  Examples are
 SummarizedExperiment, SingleCellExperiment, SpatialExperiment.
 \item \textbf{Annotation support}.
 org.Hs.eg.db, GO.db, TxDb.Hsapiens.UCSC.hg38.knownGene
 \item \textbf{Analysis of genome-scale data}.  Most of the 2000+
 packages curated by the project address details of genome-scale
-analyses
+analysis.  Highly ranked (by recorded number of downloads)  
+analysis packages include limma, edgeR, DESeq2, clusterProfiler, VariantAnnotation, sva.
 \end{itemize}
 
 Table~\ref{tbl:analysis_pkgs} summarizes growth in the
@@ -279,11 +282,6 @@ git.bioconductor.org.
 \end{table}
 
 
-Web site summary get from google analytics?
-
-
-
-
 
 \subsection{Publication}
 
@@ -316,7 +314,7 @@ citations since 2003.
 
 \subsection{Leadership structure \& community engagement}
 
-The \url{https://bioconductor.org/about/technical-advisory-board/}{Technical Advisory Board} meets
+The \href{https://bioconductor.org/about/technical-advisory-board/}{Technical Advisory Board} meets
 monthly to discuss technical issues important to establishing and
 maintaining project momentum. Over the past three years the structure
 has been formalized with a governance document and procedures to
@@ -324,13 +322,20 @@ ensure influx of new participants through a public nomination process
 followed by election to a three year term. 
 Meeting minutes are publised at the site noted above.
 
-The \url{https://bioconductor.org/about/community-advisory-board/}{Community Advisory Board} was established in 2020 to more
+The \href{https://bioconductor.org/about/community-advisory-board/}{Community Advisory Board} was established in 2020 to more
 directly address the training and outreach mission of
-\Bioconductor. Motivation is several-fold. It is clear the project as
-a whole would benefit from attention focused on community
-engagement. The combined purview of the technical and community boards
-is too large for a single board. The second board expands leadership
-opportunities within the project.
+\Bioconductor.  The Community Advisory Board has developed
+\href{guidelines}{http://workinggroups.bioconductor.org/working-group-and-committee-guidelines.html}
+for creating new working groups and committees to harness community energies.  Active working
+groups work in the following areas:
+\begin{itemize}
+\item \href{https://github.com/Bioconductor/bioc_coc_multilingual}{Code of conduct}.
+\item Conference planning.
+\item \href{http://bioconductor.org/developers/new-developer-program/}{Developer training} (\href{https://www.youtube.com/watch?v=CcJgcDy2qEI&list=PLdl4u5ZRDMQQLMupAtEzm2y4gUIUm_1n6}{youtube playlist}).
+\item \href{https://github.com/bioconductor/bioconductor-teaching}{Education} (including \href{https://github.com/carpentries-incubator/bioc-intro}{Carpentries incubator modules}).
+\item Governance, which has included engagement with La Piana consulting, a national firm advising on 
+strategies for non-profits.
+\end{itemize}
 
 \subsection{User Support}
 
@@ -449,7 +454,7 @@ lists members as of October 2022 (sic).
 \centering
 \begin{tabular}{llll}
   \hline
- Name & Org. & City & Country \\ 
+ Name & Organization & City & Country \\ 
   \hline
  Vince Carey & Harvard Medical School & Boston & US \\ 
  Levi Waldron & CUNY School of Public Health & New York & US \\ 
@@ -486,7 +491,7 @@ member information.
 \caption{Community advisory board members serving as of Oct. 2022.}
 \begin{tabular}{llll}
   \hline
-  Name & Org. & City & Country \\ 
+  Name & Organization & City & Country \\ 
   \hline
  Yagoub A. I. Adam & Covenant University & Ota & NG \\ 
    Benilton Carvalho & Universidade Estadual de Campinas & Campinas & BR \\ 
@@ -521,7 +526,7 @@ membership as of October 2022 is listed in Table \ref{sabtable}.
 \label{sabtable}
 \begin{tabular}{rllll}
   \hline
- Name & Org. & City & Country \\ 
+ Name & Organization & City & Country \\ 
   \hline
  Robert Gentleman & Harvard Medical School & Boston & US \\ 
  Rafael Irizarry & Dana-Farber Cancer Institute & Boston & US \\ 
