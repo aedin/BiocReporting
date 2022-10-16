@@ -1,6 +1,6 @@
 Package: BiocReporting
 Title: Resources for reporting on Bioconductor project
-Version: 0.0.0
+Version: 0.0.1
 Authors@R: 
     c(
        person(
@@ -18,7 +18,7 @@ Imports: tibble,
 	dplyr,
 	ggplot2,
 	httr,
-	lubridate
+	lubridate, rorcid
 Suggests: knitr, testthat
 LazyData: true
 VignetteBuilder: knitr
