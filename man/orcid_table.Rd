@@ -13,6 +13,11 @@ orcid_table(orcids)
 get data.frame of employment info from orcid
 }
 \examples{
+if (interactive()) {  # need a token?
 oids = c("0000-0003-4046-0063", "0000-0003-4046-0063")
-orcid_table(oids)
+print(orcid_table(oids))
+oids = c(oids, NA)
+print(orcid_table(oids))
+print(orcid_table(oids[1]))
+}
 }

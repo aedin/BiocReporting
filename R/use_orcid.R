@@ -24,9 +24,11 @@
 #
 # try the API via rorcid
 #
+ if (!is.na(orcid)) {
  ee = orcid_employments(orcid)
  dat = try(t(ee[[orcid]][["affiliation-group"]][["summaries"]][[1]]), silent=TRUE) # should be more precise than try()
- if (inherits(dat, "try-error")) {
+ }
+ if (is.na(orcid) || inherits(dat, "try-error")) {
     ans = matrix(sna, nrow=1)
     colnames(ans) = names(sna)
     ans = data.frame(ans)
@@ -51,7 +53,10 @@
 #' @examples
 #' if (interactive()) {  # need a token?
 #' oids = c("0000-0003-4046-0063", "0000-0003-4046-0063")
-#' orcid_table(oids)
+#' print(orcid_table(oids))
+#' oids = c(oids, NA)
+#' print(orcid_table(oids))
+#' print(orcid_table(oids[1]))
 #' }
 #' @export
 orcid_table = function(orcids) {
