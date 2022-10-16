@@ -13,6 +13,8 @@
 
 \tableofcontents
 
+\pagebreak
+
 \section{Project Scope}
 
 \Bioconductor{} provides access to software for the analysis and
@@ -87,7 +89,7 @@ using Biostrings.
 %M. Doyle	Limerick	Comm. Mgr.	A. Culhane
 %K. Interdonato	RPCI	Hubs/Anno	L. Kern
 
-\begin{figure}[h]
+\begin{figure}[b]
   \begin{center}
     \includegraphics[width=1.1\textwidth,height=!]{newgr2}
     \caption{Organizational chart.}
@@ -106,8 +108,8 @@ contributors.  There are several types of package to be distinguished.
 
 \begin{itemize}
 \item \textbf{Central infrastructure}.  This includes packages that
-provide formal programming support with no direct substantive
-relationship to genomics.  These include BiocManager,
+provide formal programming support.
+Exampls include
 BiocGenerics,
 S4Vectors,
 BiocVersion,
@@ -117,11 +119,16 @@ zlibbioc,
 XVector,
 BiocParallel,
 DelayedArray,
-MatrixGenerics. 
+MatrixGenerics, graph, rhdf5.
 \item \textbf{Genome representation support}.  This includes
 Biostrings, BSgenome, GenomeInfoDb, GenomicRanges.
-\item \textbf{Experiment representation support}.  This includes
+\item \textbf{Experiment representation support}.  Examples are
 SummarizedExperiment, SingleCellExperiment, SpatialExperiment.
+\item \textbf{Annotation support}.
+org.Hs.eg.db, GO.db, TxDb.Hsapiens.UCSC.hg38.knownGene
+\item \textbf{Analysis of genome-scale data}.  Most of the 2000+
+packages curated by the project address details of genome-scale
+analyses
 \end{itemize}
 
 Table~\ref{tbl:analysis_pkgs} summarizes growth in the
@@ -421,59 +428,120 @@ build machines are recently updated, with adequate room for growth.
 \subsection{Key Personnel}
 \label{sec:key_personnel}
 
-The \textbf{Core Development Team} are primarily employees of Roswell
-Park Cancer Institute, developing software and other infrastructure
-and ensuring day-to-day operation of the project. Core team members in
-the period covered by this report include Martin Morgan, Herv\'{e}
+The \textbf{Core Development Team} 
+develops software and other infrastructure
+and ensures day-to-day operation of the project. Core team members in
+the period covered by this report include Martin Morgan, Vincent Carey, Herv\'{e}
 Pag\`{e}s, Marcel Ramos, Lori Shepherd, Nitesh Turaga,
-and Kayla Interdonato. The core team is stable but in chronic
-need of additional members.
+and Kayla Interdonato. 
+
+\section{Advisory Boards}
 
 The \textbf{Technical Advisory Board} provides guidance through
-monthly telephone conference calls. Current members include: Vince
-Carey, Brigham \& Women’s, Harvard Medical School, USA. Chair; Levi
-Waldron CUNY School of Public Health at Hunter College, New York, NY,
-Vice-Chair; Charlotte Soneson, Friedrich Miescher Institute, Basel,
-Switzerland, Secretary; Aedin Culhane, Dana-Farber Cancer Institute,
-Harvard School of Public Health, USA; Hector Corrada Bravo, Genentech
-Research and Early Development, USA; Laurent Gatto Institut de Duve,
-Belgium; Robert Gentleman, Computational Biology, 23andMe, USA; Shila
-Ghazanfar, Cancer Research UK, Cambridge; Kasper Daniel Hansen,
-Bloomberg School of Public Health, Johns Hopkins University; Stephanie
-Hicks Department of Biostatistics, Johns Hopkins Bloomberg School of
-Public Health, USA; Wolfgang Huber European Molecular Biology
-Laboratory, Heidelberg, Germany; Rafael Irizarry Dana-Farber Cancer
-Institute, USA; Aaron Lun, Genentech Research and Early Development,
-USA; Michael Love, University of North Carolina-Chapel Hill, USA;
-Martin Morgan, Roswell Park Comprehensive Cancer Center, Buffalo, NY,
-USA.
+monthly telephone conference calls.  Table \ref{tabtable}
+lists members as of October 2022 (sic).
 
-The recently formulated \textbf{Community Advisory Board} supports the
+% latex table generated in R 4.2.1 by xtable 1.8-4 package
+% Sun Oct 16 06:40:42 2022
+\begin{table}[ht]
+\label{tabtable}
+\caption{Technical advisory board members serving as of Oct. 2022.}
+\centering
+\begin{tabular}{llll}
+  \hline
+ Name & Org. & City & Country \\ 
+  \hline
+ Vince Carey & Harvard Medical School & Boston & US \\ 
+ Levi Waldron & CUNY School of Public Health & New York & US \\ 
+ Charlotte Soneson & FMI & Basel & CH \\ 
+ Aedin Culhane & U Limerick & Limerick & IE \\ 
+ Sean Davis & University of Colorado Anschutz Medical Campus & Aurora & US \\ 
+ Laurent Gatto & Université Catholique de Louvain & Louvain-la-Neuve & BE \\ 
+ Robert Gentleman & Harvard Medical School & Boston & US \\ 
+ Shila Ghazanfar & Cancer Research UK Cambridge Institute & Cambridge & GB \\ 
+ Kasper Daniel Hansen & Johns Hopkins University & Baltimore & US \\ 
+ Stephanie Hicks & Johns Hopkins Bloomberg School of Public Health & Baltimore & US \\ 
+ Wolfgang Huber & EMBL & Heidelberg & DE \\ 
+ Rafael Irizarry & Dana-Farber Cancer Institute & Boston &  US \\ 
+ Lori Shepherd & Roswell Park Cancer Institute & Buffalo & US \\ 
+ Michael Love & University of North Carolina at Chapel Hill & Chapel Hill & US \\ 
+ Davide Risso & University of Padua & Padova & IT \\ 
+   \hline
+\end{tabular}
+\end{table}
+
+
+The \textbf{Community Advisory Board} supports the
 \Bioconductor{} mission by empowering user and developer communities
 by coordinating training and outreach activities, and enabling
 productive and respectful participation by Bioconductor users and
-developers at all levels of experience. Current members include:
-Yagoub Adam, Covenant University, Nigeria; Benilton Carvalho,
-University of Campinas, Brazil; Leonardo Collado-Torres, Lieber
-Institute for Brain Development, USA; Aedin Culhane, Dana-Farber
-Cancer Institute, USA; Saskia Freytag, Harry Perkins Institute of
-Medical Research, Australia; Susan Holmes, Stanford, USA; Kozo
-Nishida, RIKEN Center for Biosystems Dynamics Research, Japan;
-Johannes Rainer, Eurac Research, Italy Matt Ritchie, The Walter and
-Eliza Hall Institute of Medical Research, Australia; Lori Shepherd,
-Roswell Park Comprehensive Cancer Center, USA.
+developers at all levels of experience.  See \ref{cabtable} for
+member information.
+
+% latex table generated in R 4.2.1 by xtable 1.8-4 package
+% Sun Oct 16 05:58:14 2022
+\begin{table}[ht]
+\centering
+\label{cabtable}
+\caption{Community advisory board members serving as of Oct. 2022.}
+\begin{tabular}{llll}
+  \hline
+  Name & Org. & City & Country \\ 
+  \hline
+ Yagoub A. I. Adam & Covenant University & Ota & NG \\ 
+   Benilton Carvalho & Universidade Estadual de Campinas & Campinas & BR \\ 
+   Daniela Cassol & University of California Riverside & Riverside & US \\ 
+   Leonardo Collado-Torres & Lieber Institute for Brain Development & Baltimore & US \\ 
+   Aedin Culhane & Dana Farber Cancer Institute & Boston & US \\ 
+   Xueyi Dong & Walter and Eliza Hall Institute of Medical Research & Melbourne & AU \\ 
+   Susan Holmes & Stanford University & Stanford & US \\ 
+   Leo Lahti & University of Turku & Turku & FI \\ 
+   Estefania Mancini & Centre for Genomic Regulation & Barcelona & ES \\ 
+   Kozo Nishida & RIKEN & Suita & JP \\ 
+   Nicole Ortogero & Nanostring, Inc. & Seattle & US \\ 
+   Johannes Rainer & Eurac Research & Bolzano & IT \\ 
+   Janani Ravi & University of Colorado Anschutz Medical Campus & Aurora & US \\ 
+   Matt Ritchie & Walter and Eliza Hall Institute of Medical Research & Melbourne & AU \\ 
+   Kevin Rue-Albrecht & University of Oxford & Oxford & GB \\ 
+   Lori Shepherd & Roswell Park Cancer Institute & Buffalo & US \\ 
+   Mike Smith & EMBL & Heidelberg & DE \\ 
+   Hedia Tnani & CNAG & Barcelona & ES \\ 
+   \hline
+\end{tabular}
+\end{table}
+
 
 The \textbf{Scientific Advisory Board} provides oversight through
-yearly meetings. Current members include: Robert Gentleman (Advisory
-Board Chair, 23andMe); Jenny Bryan (RStudio); Vincent Carey (Brigham
-\& Women’s); Valentina di Francesco (NHGRI); Wolfgang Huber (European
-Molecular Biology Laboratory); Rafael Irizarry (Dana Farber); Audrey
-Kauffmann (Novartis); Martin Morgan (Roswell Park); Benjamin Neale
-(Broad Institute); Michael Schatz (Johns Hopkins University); Jay
-Shendure (University of Washington); Levi Waldron (CUNY School of
-Public Health). Audrey Kauffman and Jay Shendure are new board members
-starting a three-year term; Jan Vitek leaves the board after three
-years of service, for which we are grateful. Michael Schatz has
-graciously agreed to complete James Taylor's term.
+yearly meetings.  No meeting was held in 2021.  Board
+membership as of October 2022 is listed in Table \ref{sabtable}.
+
+\begin{table}[ht]
+\centering
+\caption{Scientific Advisory Board members.}
+\label{sabtable}
+\begin{tabular}{rllll}
+  \hline
+ Name & Org. & City & Country \\ 
+  \hline
+ Robert Gentleman & Harvard Medical School & Boston & US \\ 
+ Rafael Irizarry & Dana-Farber Cancer Institute & Boston & US \\ 
+ Vincent Carey & Harvard Medical School & Boston & US \\ 
+ Chris Wellington & NHGRI & Bethesda & US \\ 
+ Wolfgang Huber & EMBL  & Heidelberg & DE \\ 
+ Martin Morgan & Roswell Park Comprehensive Cancer Center & Buffalo & US \\ 
+ Benjamin Neale & Broad Institute & Cambridge & US \\ 
+ Michael Schatz & Johns Hopkins University & Baltimore & US \\ 
+ Aviv Regev & Genentech, Inc. & San Francisco & US \\ 
+ Sandrine Dudoit & UC Berkeley & Berkeley & US \\ 
+ John Marioni & EMBL-EBI & Cambridge & GB \\ 
+ Daniela M Witten & U Washington & Seattle & US \\ 
+ Barbara Engelhardt & Stanford University & Stanford & US \\ 
+ Susan Holmes & Stanford University & Stanford & US \\ 
+ Benilton Carvalho & Universidade Estadual de Campinas & Campinas & BR \\ 
+ Jay Shendure & University of Washington & Seattle & US \\ 
+   \hline
+\end{tabular}
+\end{table}
+
 
 \end{document}
