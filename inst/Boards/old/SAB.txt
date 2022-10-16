@@ -1,0 +1,17 @@
+name,orcid
+Robert Gentleman,0000-0003-4505-9893
+Rafael Irizarry,0000-0002-3944-4309
+Vincent Carey,0000-0003-4046-0063
+Chris Wellington,NA
+Wolfgang Huber,0000-0002-0474-2218
+Martin Morgan,0000-0002-5874-8148
+Benjamin Neale,0000-0003-1513-6077
+Michael Schatz,0000-0002-4118-4446
+Aviv Regev,0000-0003-3293-3158
+Sandrine Dudoit,0000-0002-6069-8629
+John Marioni,0000-0001-9092-0852
+Daniela M Witten,0000-0002-1764-1184
+Barbara Engelhardt,0000-0002-6139-7334
+Susan Holmes,0000-0002-2208-8168
+Benilton Carvalho,0000-0001-5122-5646
+Jay Shendure,0000-0002-1516-1865

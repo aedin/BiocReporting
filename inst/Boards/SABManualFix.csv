@@ -1,0 +1,17 @@
+input,org,city,region,country,orcid
+Robert Gentleman,Harvard Medical School,Boston,MA,US,0000-0003-4505-9893
+Rafael Irizarry,Dana-Farber Cancer Institute,Boston,NA,US,0000-0002-3944-4309
+Vincent Carey,Harvard Medical School,Boston,NA,US,0000-0003-4046-0063
+Chris Wellington,NHGRI,Bethesda,NA,US,NA
+Wolfgang Huber,EMBL ,Heidelberg,NA,DE,0000-0002-0474-2218
+Martin Morgan,Roswell Park Comprehensive Cancer Center,Buffalo,New York,US,0000-0002-5874-8148
+Benjamin Neale,Broad Institute,Cambridge,MA,US,0000-0003-1513-6077
+Michael Schatz,Johns Hopkins University,Baltimore,MD,US,0000-0002-4118-4446
+Aviv Regev,"Genentech, Inc.",San Francisco,NA,US,0000-0003-3293-3158
+Sandrine Dudoit,UC Berkeley,Berkeley,NA,US,0000-0002-6069-8629
+John Marioni,EMBL-EBI,Cambridge,NA,GB,0000-0001-9092-0852
+Daniela M Witten,U Washington,Seattle,NA,US,0000-0002-1764-1184
+Barbara Engelhardt,Stanford University,Stanford,California,US,0000-0002-6139-7334
+Susan Holmes,Stanford University,Stanford,CA,US,0000-0002-2208-8168
+Benilton Carvalho,Universidade Estadual de Campinas,Campinas,SP,BR,0000-0001-5122-5646
+Jay Shendure,University of Washington,Seattle,Washington,US,0000-0002-1516-1865
