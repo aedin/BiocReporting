@@ -1,0 +1,130 @@
+
+\title{News from the Bioconductor Project}
+\author{by Bioconductor Core Team}
+\maketitle
+
+\href{https://bioconductor.org}{Bioconductor} provides
+tools for the analysis and comprehension of high-throughput genomic
+data.  The project has entered its twentieth year, with funding
+for core development and infrastructure maintenance secured
+through 2025 (NIH NHGRI 2U24HG004059).  Additional support is provided
+by NIH NCI, Chan-Zuckerberg Initiative, National Science Foundation,
+Microsoft, and Amazon.  In this news report, we give some
+details about the software and data resource collection,
+infrastructure for building, checking, and distributing resources,
+core team activities, and some new initiatives.
+ 
+\textit{Software ecosystem}
+
+Bioconductor 3.16 was released on 2 November, 2022. It is
+compatible with R 4.2 and consists of 2183 software packages, 416
+experiment data packages, 909 up-to-date annotation packages, 28
+workflows, and 3 books. \href{https://bioconductor.org/books/release/}{Books} are
+built regularly from source and therefore fully
+reproducible; an example is the
+community-developed \href{https://bioconductor.org/books/release/OSCA/}{Orchestrating
+Single-Cell Analysis with Bioconductor}.
+The Bioconductor
+\href{https://bioconductor.org/news/bioc_3_16_release/}{3.16 release
+  announcement} includes descriptions of 71 new software packages, 9 new data
+  experiment packages, 2 new annotation packages, and updates to NEWS files for
+  many additional packages. 
+
+\textit{Infrastructure updates}
+
+\begin{itemize}
+\end{itemize}
+
+\textit{Core team updates}
+\begin{itemize}
+\item New developer XXX has joined the Bioconductor Core Developer Team.  xxx is a member of xxx.
+\item xxx is joined by long-term core members Lori Kern of Roswell Park
+Comprehensive Cancer Center, Marcel Ramos of CUNY and Roswell, Herv\'e Pages of
+Fred Hutchinson Cancer Research Center, Jennifer Wokaty of CUNY, and Alex
+Mahmoud at Channing Division of Network Medicine.
+\end{itemize}
+
+\textit{New initiatives}
+
+\begin{itemize}
+\end{itemize}
+
+
+
+\textit{Using Bioconductor}
+
+Start using
+Bioconductor by installing the most recent version of R and evaluating
+the commands
+\begin{example}
+  if (!requireNamespace("BiocManager", quietly = TRUE))
+      install.packages("BiocManager")
+  BiocManager::install()
+\end{example}
+Install additional packages and dependencies,
+e.g., \BIOpkg{SingleCellExperiment}, with
+\begin{example}
+  BiocManager::install("SingleCellExperiment")
+\end{example}
+\href{https://bioconductor.org/help/docker/}{Docker}
+images provides a very effective on-ramp for power users to rapidly
+obtain access to standardized and scalable computing environments.
+Key resources include:
+%% 
+\begin{itemize}
+\item \href{https://bioconductor.org}{bioconductor.org} to install,
+  learn, use, and develop Bioconductor packages.
+\item A list of \href{https://bioconductor.org/packages}{available
+  software}, linking to pages describing each package.
+\item A question-and-answer style
+  \href{https://support.bioconductor.org}{user support site} and
+  developer-oriented
+  \href{https://stat.ethz.ch/mailman/listinfo/bioc-devel}{mailing
+    list}.
+\item A community slack (\href{https://bioc-community.herokuapp.com/}{sign up})
+   for extended technical discussion.
+\item The
+  \href{https://f1000research.com/channels/bioconductor}{F1000Research
+    Bioconductor channel} for peer-reviewed Bioconductor work flows.
+\item The \href{https://www.youtube.com/user/bioconductor}{Bioconductor YouTube} 
+     channel includes recordings of keynote and talks from recent 
+     conferences including Bioc2022, EuroBioC2022, and BiocAsia2021, in addition to 
+     video recordings of training courses. 
+\item Our \href{https://github.com/Bioconductor/Contributions}{package
+  submission} repository for open technical review of new packages.
+\end{itemize}
+
+Recent Bioconductor conferences include
+\href{https://bioc2022.bioconductor.org}{BioC 2022} (July 27-29),
+\href{https://eurobioc2022.bioconductor.org/}{European Bioconductor Meeting}
+(September 14-16),
+and \href{https://biocasia2022.bioconductor.org/}{BiocAsia2022} (December
+1-2). Each had invited and contributed talks, as well as workshops and other sessions to enable community
+participation. Slides, videos, and workshop material for each conference are, or
+will soon be, available on each conference web site as well as from
+the \href{http://bioconductor.org/help/course-materials/}{Courses and
+Conferences} section of the Bioconductor web site.
+
+The Bioconductor project continues to mature as a
+community. The \href{https://bioconductor.org/about/technical-advisory-board/}{Technical}
+and \href{https://bioconductor.org/about/community-advisory-board/}{Community}
+Advisory Boards provide guidance to ensure that the project addresses
+leading-edge biological problems with advanced technical approaches,
+and adopts practices (such as a
+project-wide \href{https://bioconductor.org/about/code-of-conduct/}{Code
+of Conduct}) that encourages all to participate. We look forward to
+welcoming you!
+
+\address{Bioconductor Core Team \\
+    Channing Division of Network Medicine \\
+    Mass General Brigham \\
+    Harvard Medical School, Boston, MA \\ \\
+    Department of Data Science \\
+    Dana-Farber Cancer Institute \\
+    Harvard Medical School, Boston, MA \\ \\
+    Biostatistics and Bioinformatics \\
+    Roswell Park Comprehensive Cancer Center, Buffalo, NY \\ \\
+    Fred Hutchinson Cancer Research Center, Seatlle, WA \\ \\
+    CUNY Graduate School of Public Health, New York, NY}
+
+\email{maintainer@bioconductor.org}
