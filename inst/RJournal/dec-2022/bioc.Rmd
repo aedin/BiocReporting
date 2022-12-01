@@ -1,8 +1,9 @@
 ---
-title: "Bioconductor Notes"
-date: "2022-11-09"
+title: "Bioconductor Notes, Autumn 2022"
+date: "2022-11-30"
 abstract: >
-  We discuss events related to the release of Bioconductor 3.16.
+  We discuss the release of Bioconductor 3.16, along
+  with educational activities and general project news.
 draft: true
 author:  
   - name: Bioconductor Core Developer Team
@@ -57,6 +58,19 @@ Comprehensive Cancer Center, Marcel Ramos of CUNY and Roswell, Herv\'e Pages of
 Fred Hutchinson Cancer Research Center, Jennifer Wokaty of CUNY, and Alex
 Mahmoud at Channing Division of Network Medicine.
 
+# Educational activities and resources
+
+## Engagement with The Carpentries
+
+In July 2022, Bioconductor joined The Carpentries.  Details and opportunities
+for receiving training on teaching are discussed in [this blog post](https://bioconductor.github.io/biocblog/posts/2022-07-12-carpentries-membership/).
+
+A lesson on RNA-seq analysis in the Carpentries framework is [under development](https://carpentries-incubator.github.io/bioc-rnaseq/).
+
+## YES for CURE
+
+The Dana-Farber/Harvard Cancer Center [Young Empowered Scientists](https://www.dfhcc.harvard.edu/research/cancer-disparities/students/yes-for-cure/) program included a module on cancer data science
+for Summer 2022 participants.  Materials presented are assembled at a [pkgdown site](https://vjcitn.github.io/YESCDS); contact Vince Carey for information on an interactive deployment of these materials.
 
 # Using Bioconductor
 
