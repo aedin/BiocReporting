@@ -62,10 +62,10 @@ Mahmoud at Channing Division of Network Medicine.
 
 ## Engagement with The Carpentries
 
-In July 2022, Bioconductor joined The Carpentries.  Details and opportunities
+In August 2022, Bioconductor joined The Carpentries.  Details and opportunities
 for receiving training on teaching are discussed in [this blog post](https://bioconductor.github.io/biocblog/posts/2022-07-12-carpentries-membership/).
 
-A lesson on RNA-seq analysis in the Carpentries framework is [under development](https://carpentries-incubator.github.io/bioc-rnaseq/).
+Three lessons are under development in the Carpentries incubator: [Introduction to data analysis with R and Bioconductor](https://carpentries-incubator.github.io/bioc-intro/), [RNA-seq analysis with Bioconductor](https://carpentries-incubator.github.io/bioc-rnaseq/) and [The Bioconductor project](https://carpentries-incubator.github.io/bioc-project/).
 
 ## YES for CURE
 
@@ -101,13 +101,13 @@ Key resources include:
 - A question-and-answer style
   [user support site](https://support.bioconductor.org) and
   developer-oriented [mailing list](https://stat.ethz.ch/mailman/listinfo/bioc-devel).
-- A community slack ([sign up](https://slack.bioconductor.org))
+- A community slack workspace ([sign up](https://slack.bioconductor.org))
    for extended technical discussion.
-- The [F1000Research Bioconductor channel](https://f1000research.com/channels/bioconductor)
-for peer-reviewed Bioconductor work flows.
+- The [F1000Research Bioconductor gateway](https://f1000research.com/gateways/bioconductor)
+for peer-reviewed Bioconductor workflows as well as conference contributions.
 - The [Bioconductor YouTube](https://www.youtube.com/user/bioconductor)
      channel includes recordings of keynote and talks from recent 
-     conferences including Bioc2022, EuroBioC2022, and BiocAsia2021, in addition to 
+     conferences including BioC2022, EuroBioC2022, and BiocAsia2021, in addition to 
      video recordings of training courses. 
 - Our [package submission](https://github.com/Bioconductor/Contributions)
   repository for open technical review of new packages.
