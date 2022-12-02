@@ -62,10 +62,13 @@ Mahmoud at Channing Division of Network Medicine.
 
 ## Engagement with The Carpentries
 
-In August 2022, Bioconductor joined The Carpentries.  Details and opportunities
+In August 2022, Bioconductor joined The Carpentries. Details and opportunities
 for receiving training on teaching are discussed in [this blog post](https://bioconductor.github.io/biocblog/posts/2022-07-12-carpentries-membership/).
+We are currently inviting applications to become a Bioconductor Carpentries instructor through [this form](https://docs.google.com/forms/d/1PxqbPrKJymnHwofOz_03ygM9-zwSLXX-DcraepTHxXQ) and particularly encourage people who could teach underserved communities in their local languages to apply.
 
-Three lessons are under development in the Carpentries incubator: [Introduction to data analysis with R and Bioconductor](https://carpentries-incubator.github.io/bioc-intro/), [RNA-seq analysis with Bioconductor](https://carpentries-incubator.github.io/bioc-rnaseq/) and [The Bioconductor project](https://carpentries-incubator.github.io/bioc-project/).
+Three lessons are under development in the Carpentries incubator: [Introduction to data analysis with R and Bioconductor](https://carpentries-incubator.github.io/bioc-intro/), [RNA-seq analysis with Bioconductor](https://carpentries-incubator.github.io/bioc-rnaseq/) and [The Bioconductor project](https://carpentries-incubator.github.io/bioc-project/). We welcome any contributions, feedback or testing of the material.
+
+Anyone is welcome to join the #education-and-training channel in [Bioconductor Slack](https://slack.bioconductor.org) or the monthly [Bioconductor Teaching Committee meetings](https://www.bioconductor.org/help/education-training/) to learn more.
 
 ## YES for CURE
 
